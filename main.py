@@ -1,6 +1,5 @@
-import MorseCodePy as mpc
+from translate import to_morse
 
-input = input("Enter the English phrase you would linke to translate in to morse code:")
-
-morse_string = mpc.encode(input, language="english")
-print(morse_string)
+if __name__ == "__main__":
+    input = input("Enter phrase to translate: ")
+    print(to_morse(input))
